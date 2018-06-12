@@ -1,3 +1,8 @@
-var react = require('react')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Hello from './components/hello'
 
-console.log(react.version)
+ReactDOM.render(
+    <Hello />,
+    document.getElementById('root')
+)

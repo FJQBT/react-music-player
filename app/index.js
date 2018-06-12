@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
-import Hello from './components/hello'
+import Root from './root'
 
 ReactDOM.render(
     <AppContainer>
-        <Hello />
+        <Root />
     </AppContainer>,
     document.getElementById('root')
 )

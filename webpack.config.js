@@ -34,7 +34,7 @@ module.exports = {
     },
     devServer: {
         // 设置服务器访问的基本目录
-        contentBase: path.resolve(__dirname,'dist'), //最好设置成绝对路径
+        //contentBase: path.resolve(__dirname,'dist'), //最好设置成绝对路径
         // 设置服务器的ip地址,可以是localhost
         host:'localhost',
         // 设置端口

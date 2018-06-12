@@ -1,0 +1,27 @@
+{
+  "name": "react-music-player",
+  "version": "1.0.0",
+  "description": "music player build by react",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FJQBT/react-music-player.git"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "music-player"
+  ],
+  "author": "fjq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FJQBT/react-music-player/issues"
+  },
+  "homepage": "https://github.com/FJQBT/react-music-player#readme",
+  "dependencies": {
+    "react": "^16.4.0"
+  }
+}

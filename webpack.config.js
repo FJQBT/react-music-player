@@ -1,9 +1,10 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
     entry: [
-        'react-hot-laoder/patch',
+        'react-hot-loader/patch',
         './app/index.js'
     ],
     output: {
@@ -47,6 +48,7 @@ module.exports = {
             template: './index.tpl.html',
             inject: 'body',
             filename: './index.html'
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 }

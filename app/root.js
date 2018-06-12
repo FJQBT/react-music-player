@@ -19,13 +19,18 @@ class Root extends Component {
             },
             supplied: 'mp3',
             vmode: 'window',
-            muted: true
+            muted: false,
+            volume: 0.3
         });
         $('#player').bind($.jPlayer.event.timeupdate, (e) => {
             this.setState({
-                progress: Math.round(e.jPlayer.status.currentTime)
+                progress: e.jPlayer.status.currentPercentAbsolute
             });
         });
+    }
+
+    componentWillUnmount(){
+        $('#player').unbind($.jPlayer.event.timeupdate);
     }
 
     render() {

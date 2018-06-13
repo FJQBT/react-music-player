@@ -19,7 +19,7 @@ class Root extends Component {
             },
             supplied: 'mp3',
             vmode: 'window',
-            muted: false,
+            muted: true,
             volume: 0.3
         });
         $('#player').bind($.jPlayer.event.timeupdate, (e) => {

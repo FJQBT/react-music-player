@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import jPlayer from 'jplayer';
 import Header from './components/header'
-import Progress from './components/progress'
+import Player from './pages/player'
 
 class Root extends Component {
     constructor(){
         super();
-        this.state = {progress: '-'}
     }
 
     componentDidMount(){
@@ -22,22 +21,13 @@ class Root extends Component {
             muted: true,
             volume: 0.3
         });
-        $('#player').bind($.jPlayer.event.timeupdate, (e) => {
-            this.setState({
-                progress: e.jPlayer.status.currentPercentAbsolute
-            });
-        });
-    }
-
-    componentWillUnmount(){
-        $('#player').unbind($.jPlayer.event.timeupdate);
     }
 
     render() {
         return (
             <div>
                 <Header />
-                <Progress progress={this.state.progress} />
+                <Player />
             </div>
         );
     }
